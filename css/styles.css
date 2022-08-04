@@ -226,6 +226,11 @@ p {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: scale(1.2, 1.2);
 }
 
 input, textarea {
