@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Koulen&family=Teko&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+.index {
+    background-image: url(../images/glitch.jpg);
+}
+
+.about {
+    background-image: url(../images/Festival\ Ferviente\.jpg);
+}
+
+.prod {
+    background-image: url(../images/lamparita.jpg);
+}
+
+
+.rio {
+    background-image: url(../images/riorabiosa4.jpg);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 5vw 95vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas:
+    "logo nav"
+    "main main"
+    "footer footer";
+}
+
+.gridSection {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 20vh 20vh 10vh 20vh;
+    grid-template-areas: 
+    "h1 h1 h1 h1 . ."
+    "h1 h1 h1 h1 . ."
+    "h2 h2 h2 . . ."
+    "p p p p p .";
+}
+
+.gridEquipo {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "h2 h2 . . ."
+    "c c c . ."
+    "c c c . ."
+    "c c c . .";
+}
+
+header {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    height: 40px;
+}
+
+.divLogo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    font-family: 'Teko', sans-serif;
+    font-size: 40px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+    margin-right: 0;
+}
+
+ul li:hover ul {
+    display: block;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(245, 240, 233);
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.mainProd {
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 2%;
+}
+
+h1 {
+    grid-area: h1;
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Koulen', cursive;
+    font-size: 20vh;
+    color: rgb(245, 240, 233);
+}
+
+h2 {
+    grid-area: h2;
+    color: rgb(245, 240, 233);
+    font-family: 'Teko', sans-serif;
+    font-size: 8vh;
+}
+
+h3 {
+    color: rgb(245, 240, 233);
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+}
+
+article {
+    margin-top: 10vh;
+    width: 50vw;
+    padding-left: 2%;
+}
+
+.divProd {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divTa {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+p {
+    grid-area: p;
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    color: rgb(245, 240, 233);
+}
+
+.imgEquipo {
+    width: 15vw;
+    height: 10vw;
+    object-fit: cover;
+    margin-bottom: 2%;
+}
+
+.divRetratos {
+    grid-area: c;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 50vw;
+    padding: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Teko', sans-serif;
+    color: rgb(245, 240, 233);
+    font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+
+    .index {
+        background-image: url(../images/glitch-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 25vh 75vh 90vh 10vh;
+        grid-template-areas:
+        "logo" 
+        "nav"
+        "main"
+        "footer";
+    }
+
+    .gridSection {
+        grid-template-columns: 90vw 10vw;
+        grid-template-rows: 30vh 10vh 50vh;
+        grid-template-areas: 
+        "h1 ."
+        "h2 ."
+        "p p";
+    }
+
+    .gridEquipo {
+        grid-template-columns: 90vw 10vw;
+        grid-template-rows: 10vh 80vh;
+        grid-template-areas: 
+        "h2."
+        "c c"
+        "c c";
+        overflow: scroll;
+    }
+
+    header {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+    }
+
+    .divRetratos {
+        flex-direction: column;
+    }
+
+    .imgEquipo {
+        width: 80vw;
+        height: 54vw;
+    }
+
+    h1 {
+        font-size: 12vh;
+        line-height: 12vh;
+        padding-left: 20px;
+    }
+
+    h2 {
+        font-size: 6vh;
+        padding-left: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+        "logo nav nav nav nav nav"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+    }
+
+    .gridSection {
+        grid-template-columns: 90vw 10vw;
+        grid-template-rows: 35vh 10vh 35vh;
+        grid-template-areas: 
+        "h1 ."
+        "h2 ."
+        "p p";
+    }
+
+    .gridEquipo {
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "h2 h2 ."
+        "c c c"
+        "c c c"
+        "c c c";
+    }
+
+    li {
+        font-size: 35px;
+    }
+
+    h1 {
+        font-size: 14vh;
+        line-height: 14vh;
+        padding-left: 20px;
+    }
+
+    h2 {
+        font-size: 7vh;
+        padding-left: 20px;
+    }
+
+    p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .divRetratos {
+        justify-content: space-evenly;
+    }
+
+    .imgEquipo {
+        width: 30vw;
+        height: 20vw;
+    }
+}
