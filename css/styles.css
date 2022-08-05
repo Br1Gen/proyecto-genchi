@@ -194,6 +194,14 @@ article {
     justify-content: flex-end;
 }
 
+.color {
+    transition: color 1s;
+}
+
+.color:hover {
+    color: cadetblue;
+}
+
 .text-flicker-in-glow{animation:text-flicker-in-glow 4s linear both}
 
 /* ----------------------------------------------
