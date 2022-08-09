@@ -59,12 +59,12 @@ body {
     "c c c . .";
 }
 
-header {
+/*header {
     grid-area: nav;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
+}*/
 
 nav {
     display: flex;
@@ -76,12 +76,12 @@ nav {
     height: 40px;
 }
 
-.divLogo {
+/*.divLogo {
     grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 ul {
     list-style: none;
@@ -111,7 +111,7 @@ ul li:hover ul {
     right: 0;
 }
 
-a {
+a, .nav-link {
     text-decoration: none;
     color: rgb(245, 240, 233);
 }
@@ -183,8 +183,9 @@ article {
     justify-content: flex-end;
 }
 
-li a:hover {
+li a:hover, .nav-link:hover {
     text-decoration: underline;
+    color: rgb(245, 240, 233);
 }
 
 p {
