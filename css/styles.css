@@ -121,6 +121,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    height: 90vh;
 }
 
 .mainProd {
@@ -128,9 +129,9 @@ main {
 }
 
 section {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-end;*/
     padding-left: 2%;
 }
 
@@ -183,7 +184,7 @@ article {
     justify-content: flex-end;
 }
 
-li a:hover, .nav-link:hover {
+a:hover, li a:hover, .nav-link:hover {
     text-decoration: underline;
     color: rgb(245, 240, 233);
 }
@@ -223,7 +224,7 @@ input, textarea {
     padding: 12px;
     margin-bottom: 10px;
     margin-top: 10px;
-  }
+}
   
 
 footer {
