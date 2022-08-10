@@ -72,6 +72,10 @@ nav {
     z-index: 10;
 }
 
+.navbar-toggler-icon {
+    background-image: url(../images/hamburger.png);
+}
+
 .logo {
     height: 40px;
 }
@@ -121,7 +125,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 90vh;
+    height: 85vh;
 }
 
 .mainProd {
@@ -140,7 +144,7 @@ h1 {
     display: flex;
     align-items: flex-end;
     font-family: 'Koulen', cursive;
-    font-size: 20vh;
+    font-size: 11vw;
     color: rgb(245, 240, 233);
 }
 
@@ -148,7 +152,7 @@ h2 {
     grid-area: h2;
     color: rgb(245, 240, 233);
     font-family: 'Teko', sans-serif;
-    font-size: 8vh;
+    font-size: 5vw;
 }
 
 h3 {
@@ -237,7 +241,7 @@ footer {
     font-size: 20px;
 }
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
 
     .index {
         background-image: url(../images/glitch-mobile.jpg);
@@ -367,4 +371,4 @@ footer {
         width: 30vw;
         height: 20vw;
     }
-}
+}*/
