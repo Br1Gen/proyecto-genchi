@@ -241,7 +241,7 @@ footer {
     font-size: 20px;
 }
 
-/*@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
     .index {
         background-image: url(../images/glitch-mobile.jpg);
@@ -250,6 +250,7 @@ footer {
     }
 
     .grid {
+        display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 25vh 75vh 90vh 10vh;
         grid-template-areas:
@@ -260,6 +261,7 @@ footer {
     }
 
     .gridSection {
+        display: grid;
         grid-template-columns: 90vw 10vw;
         grid-template-rows: 30vh 10vh 50vh;
         grid-template-areas: 
@@ -298,13 +300,14 @@ footer {
     }
 
     h1 {
-        font-size: 12vh;
-        line-height: 12vh;
+        font-size: 11vh;
+        line-height: 11vh;
         padding-left: 20px;
+        padding-right: 20px;
     }
 
     h2 {
-        font-size: 6vh;
+        font-size: 5vh;
         padding-left: 20px;
     }
 
@@ -371,4 +374,4 @@ footer {
         width: 30vw;
         height: 20vw;
     }
-}*/
+}
