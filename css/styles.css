@@ -27,7 +27,7 @@ body {
     background-image: url(../images/riorabiosa4.jpg);
 }
 
-.grid {
+/*.grid {
     display: grid;
     grid-template-columns: 5vw 95vw;
     grid-template-rows: 10vh 80vh 10vh;
@@ -57,7 +57,7 @@ body {
     "c c c . ."
     "c c c . ."
     "c c c . .";
-}
+}*/
 
 /*header {
     grid-area: nav;
@@ -65,6 +65,10 @@ body {
     align-items: center;
     justify-content: flex-end;
 }*/
+
+.animate__delay-1s, .animate__delay-2s, .animate__delay-3s, .animate__fadeInLeft, .animate__fadeInRight {
+    --animate-delay: 0.25s
+}
 
 nav {
     display: flex;
@@ -74,6 +78,13 @@ nav {
 
 .navbar-toggler-icon {
     background-image: url(../images/hamburger.png);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 .logo {
@@ -110,10 +121,10 @@ ul ul li {
     margin-right: 0;
 }
 
-ul li:hover ul {
+/*ul li:hover ul {
     display: block;
     right: 0;
-}
+}*/
 
 a, .nav-link {
     text-decoration: none;
