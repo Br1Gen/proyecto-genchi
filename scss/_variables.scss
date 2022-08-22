@@ -1,14 +1,31 @@
-/*colores*/
+/*variable*/
 
 $color-texto: rgb(245, 240, 233);
 
-/*tamaños fuente*/
+/*mixin color y tamaño fuente*/
 
-$fuente-li: 40px;
-$fuente-h1: 11vw;
-$fuente-h2: 5vw;
-$fuente-p: 24px;
-$fuente-footer: 20px;
+@mixin color-size ($size) {
+    color: rgb(245, 240, 233);
+    font-size: $size;
+}
+
+/*map font size*/
+
+$sizes: (
+    li: 40px,
+    footer: 20px
+);
+
+/*map font family*/
+
+$family: (
+    li: ('Teko', sans-serif),
+    h1: ('Koulen', cursive),
+    h2: ('Teko', sans-serif),
+    h3: ('Teko', sans-serif),
+    p: ('Dosis', sans-serif),
+    f: ('Teko', sans-serif),
+);
 
 /*medidas*/
 

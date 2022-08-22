@@ -1,3 +1,95 @@
-@import url(_variables.scss);
-@import url(_generales.scss);
-@import url(_index.scss);
+@charset "UTF-8";
+/*variable*/
+/*mixin color y tamaño fuente*/
+/*map font size*/
+/*map font family*/
+/*medidas*/
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Koulen&family=Teko&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #1d1d1d; }
+
+.index {
+  background-image: url(../images/glitch.jpg); }
+
+header .animate__delay-1s,
+header .animate__delay-2s,
+header .animate__delay-3s {
+  --animate-delay: 0.25s
+    ; }
+
+header nav {
+  display: flex;
+  align-items: center;
+  z-index: 10; }
+  header nav a .logo {
+    height: 40px; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      display: block;
+      margin-right: 0;
+      font-size: 40px;
+      font-family: "Teko", sans-serif; }
+      header nav ul li .nav-link, header nav ul li .nav-link:hover {
+        text-decoration: none;
+        color: #f5f0e9; }
+        header nav ul li .nav-link:hover {
+          text-decoration: underline; }
+    header nav ul ul {
+      position: absolute;
+      display: none; }
+
+header .navbar-toggler-icon {
+  background-image: url(../images/hamburger.png); }
+  header .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none; }
+
+header .navbar-toggler:focus, header:active {
+  outline: none;
+  box-shadow: none; }
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 85vh; }
+  main section {
+    padding-left: 2%; }
+    main section h1 {
+      color: #f5f0e9;
+      font-size: 11vw;
+      grid-area: h1;
+      display: flex;
+      align-items: flex-end;
+      font-family: "Koulen", cursive; }
+    main section h2 {
+      color: #f5f0e9;
+      font-size: 5vw;
+      grid-area: h2;
+      font-family: "Teko", sans-serif; }
+    main section p {
+      color: #f5f0e9;
+      font-size: 24px;
+      grid-area: p;
+      font-family: "Dosis", sans-serif; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Teko", sans-serif;
+  font-size: 20px; }
+  footer a {
+    text-decoration: none;
+    color: #f5f0e9; }
+    footer a:hover {
+      text-decoration: underline;
+      color: #f5f0e9; }

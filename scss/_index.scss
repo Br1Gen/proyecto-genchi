@@ -12,9 +12,34 @@ header {
         z-index: 10;
 
         a {
-            .nav-link {
-                text-decoration: none;
-                color: $color-texto;
+            .logo {
+                height: $logo;
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                display: block;
+                margin-right: 0;
+                font-size: map-get($sizes, li);
+                font-family: map-get($family, li);
+
+                .nav-link {
+                    text-decoration: none;
+                    color: $color-texto;
+
+                    &:hover {
+                        @extend .nav-link;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            ul {
+                position: absolute;
+                display: none;
             }
         }
     }
@@ -33,20 +58,6 @@ header {
         outline: none;
         box-shadow: none;
     }
-
-    ul {
-        list-style: none;
-
-        ul {
-            position: absolute;
-            display: none;
-
-            li {
-                display: block;
-                margin-right: 0;
-            }
-        }
-    }
 }
 
 main {
@@ -60,25 +71,41 @@ main {
         padding-left: 2%;
 
         h1 {
+            @include color-size (11vw);
             grid-area: h1;
             display: flex;
             align-items: flex-end;
-            font-family: 'Koulen', cursive;
-            font-size: 11vw;
-            color: $color-texto;
+            font-family: map-get($family, h1);
         }
 
         h2 {
+            @include color-size (5vw);
             grid-area: h2;
-            color: $color-texto;
-            font-family: 'Teko', sans-serif;
-            font-size: 5vw;
+            font-family: map-get($family, h2);
         }
 
         p {
+            @include color-size (24px);
             grid-area: p;
-            font-family: 'Dosis', sans-serif;
-            font-size: 24px;
+            font-family: map-get($family, p);
+        }
+    }
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: map-get($family, f);
+    font-size: map-get($sizes, footer);
+
+    a {
+        text-decoration: none;
+        color: $color-texto;
+
+        &:hover {
+            text-decoration: underline;
             color: $color-texto;
         }
     }
