@@ -93,3 +93,20 @@ footer {
     footer a:hover {
       text-decoration: underline;
       color: #f5f0e9; }
+
+@media screen and (max-width: 480px) {
+  .index {
+    background-image: url(../images/glitch-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  header {
+    justify-content: center;
+    flex-direction: column; }
+    header li {
+      display: block;
+      text-align: center; }
+  main {
+    align-items: flex-end;
+    height: fit-content; }
+    main section {
+      padding-top: 10vh; } }

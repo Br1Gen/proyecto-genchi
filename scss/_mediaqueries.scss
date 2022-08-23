@@ -1,0 +1,27 @@
+@media screen and (max-width: 480px) {
+
+    .index {
+        background-image: url(../images/glitch-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    header {
+        justify-content: center;
+        flex-direction: column;
+
+        li {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    main {
+        align-items: flex-end;
+        height: fit-content;
+
+        section {
+            padding-top: 10vh;
+        }
+    }
+}
