@@ -9,64 +9,69 @@
     <title>Contacto</title>
     <link rel="icon" href="../images/favicon.png">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/stylesbackup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body>
-    <div>
-        <header class="container-fluid">
-            <nav class="row">
-                <div class="divLogo col-lg-1">
-                    <a href="../index.html"><img src="../images/favicon2.png" alt="logo" class="logo"></a>
+<body class="d-flex flex-column min-vh-100">
+    <header class="animate__animated animate__fadeIn">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/favicon2.png" alt="logo" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="producciones.html">Producciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="riorabiosa.html">Río Rabiosa</a></li>
+                        <li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Contacto</a></li>
+                    </ul>
                 </div>
-                <div class="col-lg-11">
-                <ul class="nav justify-content-end">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="equipo.html">Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="producciones.html">Producciones</a>
-                        <ul>
-                            <li class="nav-item"><a class="nav-link" href="glitch.html">Glitch</a></li>
-                            <li class="nav-item"><a class="nav-link" href="casaferviente.html">La Casa Ferviente</a></li>
-                            <li class="nav-item"><a class="nav-link" href="festival.html">Festival Ferviente</a></li>
-                            <li class="nav-item"><a class="nav-link" href="colaboraciones.html">Colaboraciones</a></li>
-                            <li class="nav-item"><a class="nav-link" href="beta.html">Beta</a></li>
-                            <li class="nav-item"><a class="nav-link" href="intervenciones.html">Intervenciones</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="riorabiosa.html">Río Rabiosa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="talleres.html">Talleres</a>
-                        <ul>
-                            <li class="nav-item"><a class="nav-link" href="mutante.html">Taller Mutante</a></li>
-                            <li class="nav-item"><a class="nav-link" href="laboratorio.html">Laboratorio de Creación Multidisciplinar</a></li>
-                            <li class="nav-item"><a class="nav-link" href="cuerpoescenico.html">Cuerpo Escénico</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" href="#">Contacto</a></li>
-                </ul>
             </div>
-            </nav>
-        </header>
+        </nav>
+    </header>
         
         <main class="mainProd">
             <section>
                 <h2>Contacto</h2>
-                <div>
-                    <form>
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
-                        <input type="email" placeholder="email">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea>
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div> 
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Apellido" required>
+                        </div>
+                    </div>>
+                    <div class="col-md-6 pb-4">
+                      <input type="text" class="form-control" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-6 pb-4">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu mensaje"></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </form> 
             </section>
         </main>
 
-        <footer>
-            <a href="https://www.facebook.com/La-Ferviente-1408043309431493" target="_blank">Facebook | </a>
-            <a href="https://www.instagram.com/@la_ferviente/" target="_blank">Instagram | </a>
-            <a href="grupolaferviente@gmail.com" target="_blank">Mail</a>
+        <footer class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="https://www.facebook.com/La-Ferviente-1408043309431493" target="_blank">Facebook</a>
+                </div>
+                <div class="col">
+                <a href="https://www.instagram.com/@la_ferviente/" target="_blank">Instagram</a>
+                </div>
+                <div class="col">
+                <a href="grupolaferviente@gmail.com" target="_blank">Mail</a>
+                </div>
+            </div>
         </footer>
-    </div>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>

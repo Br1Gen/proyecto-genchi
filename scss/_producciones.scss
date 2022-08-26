@@ -1,0 +1,30 @@
+.mainProd {
+    
+    p {
+        @include color-size (24px);
+        font-family: map-get($family, p);
+        padding-left: 2%;
+    }
+    
+    article {
+        margin-top: 10vh;
+        padding-left: 2%;
+    
+        a {
+            text-decoration: none;
+            color: $color-texto;
+            font-size: map-get($sizes, li);
+            font-family: map-get($family, li);
+    
+            &:hover {
+                text-decoration: underline;
+                color: $color-texto;
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: auto;
+}
+

@@ -13,3 +13,19 @@ body {
 .index {
     background-image: url(../images/glitch.jpg);
 }
+
+.prod {
+    background-image: url(../images/lamparita.jpg);
+}
+
+.rio {
+    background-image: url(../images/riorabiosa4.jpg);
+}
+
+.tall {
+    background-image: url(../images/festival-ferviente.jpg);
+}
+
+h1, h2, h3, p {
+    color: $color-texto;
+}

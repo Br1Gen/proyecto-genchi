@@ -1,0 +1,15 @@
+.mainRio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 85vh;
+
+    section {
+
+        p {
+            @include color-size (24px);
+            font-family: map-get($family, p);
+            padding-left: 2%;
+        }
+    }
+}

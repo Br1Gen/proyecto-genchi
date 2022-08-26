@@ -16,6 +16,18 @@ body {
 .index {
   background-image: url(../images/glitch.jpg); }
 
+.prod {
+  background-image: url(../images/lamparita.jpg); }
+
+.rio {
+  background-image: url(../images/riorabiosa4.jpg); }
+
+.tall {
+  background-image: url(../images/festival-ferviente.jpg); }
+
+h1, h2, h3, p {
+  color: #f5f0e9; }
+
 header .animate__delay-1s,
 header .animate__delay-2s,
 header .animate__delay-3s {
@@ -32,7 +44,7 @@ header nav {
     list-style: none; }
     header nav ul li {
       display: block;
-      margin-right: 0;
+      margin-right: 20px;
       font-size: 40px;
       font-family: "Teko", sans-serif; }
       header nav ul li .nav-link, header nav ul li .nav-link:hover {
@@ -40,9 +52,6 @@ header nav {
         color: #f5f0e9; }
         header nav ul li .nav-link:hover {
           text-decoration: underline; }
-    header nav ul ul {
-      position: absolute;
-      display: none; }
 
 header .navbar-toggler-icon {
   background-image: url(../images/hamburger.png); }
@@ -54,34 +63,31 @@ header .navbar-toggler:focus, header:active {
   outline: none;
   box-shadow: none; }
 
-main {
-  grid-area: main;
+.mainIndex {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 85vh; }
-  main section {
+  .mainIndex section {
     padding-left: 2%; }
-    main section h1 {
+    .mainIndex section h1 {
       color: #f5f0e9;
       font-size: 11vw;
-      grid-area: h1;
       display: flex;
       align-items: flex-end;
       font-family: "Koulen", cursive; }
-    main section h2 {
+    .mainIndex section h2 {
       color: #f5f0e9;
       font-size: 5vw;
-      grid-area: h2;
-      font-family: "Teko", sans-serif; }
-    main section p {
+      font-family: "Teko", sans-serif;
+      padding-left: 0%; }
+    .mainIndex section p {
       color: #f5f0e9;
       font-size: 24px;
-      grid-area: p;
-      font-family: "Dosis", sans-serif; }
+      font-family: "Dosis", sans-serif;
+      padding-right: 2%; }
 
 footer {
-  grid-area: footer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,7 +100,64 @@ footer {
       text-decoration: underline;
       color: #f5f0e9; }
 
+section h2 {
+  color: #f5f0e9;
+  font-size: 5vw;
+  font-family: "Teko", sans-serif;
+  padding-left: 2%; }
+
+section .retrato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; }
+  section .retrato .imgEquipo {
+    width: 15vw;
+    object-fit: cover;
+    margin-bottom: 2%; }
+  section .retrato p {
+    color: #f5f0e9;
+    font-size: 24px;
+    font-family: "Dosis", sans-serif; }
+
+.mainProd p {
+  color: #f5f0e9;
+  font-size: 24px;
+  font-family: "Dosis", sans-serif;
+  padding-left: 2%; }
+
+.mainProd article {
+  margin-top: 10vh;
+  padding-left: 2%; }
+  .mainProd article a {
+    text-decoration: none;
+    color: #f5f0e9;
+    font-size: 40px;
+    font-family: "Teko", sans-serif; }
+    .mainProd article a:hover {
+      text-decoration: underline;
+      color: #f5f0e9; }
+
+footer {
+  margin-top: auto; }
+
+.mainRio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 85vh; }
+  .mainRio section p {
+    color: #f5f0e9;
+    font-size: 24px;
+    font-family: "Dosis", sans-serif;
+    padding-left: 2%; }
+
+form {
+  padding-left: 2%; }
+
 @media screen and (max-width: 480px) {
+  /*index*/
   .index {
     background-image: url(../images/glitch-mobile.jpg);
     background-repeat: no-repeat;
@@ -105,8 +168,26 @@ footer {
     header li {
       display: block;
       text-align: center; }
-  main {
+  .mainIndex {
     align-items: flex-end;
     height: fit-content; }
-    main section {
-      padding-top: 10vh; } }
+    .mainIndex section {
+      padding-top: 10vh; }
+      .mainIndex section p {
+        text-align: justify; }
+  /*equipo*/
+  section {
+    padding-top: 10vh; }
+    section h2 {
+      font-size: 10vw;
+      padding-bottom: 5vh; }
+    section .retrato .imgEquipo {
+      width: 75vw; }
+  /*producciones*/
+  .prod {
+    background-image: url(../images/lamparita2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  /*contacto*/
+  form {
+    padding-right: 2%; } }

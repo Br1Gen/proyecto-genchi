@@ -22,7 +22,7 @@ header {
 
             li {
                 display: block;
-                margin-right: 0;
+                margin-right: 20px;
                 font-size: map-get($sizes, li);
                 font-family: map-get($family, li);
 
@@ -35,11 +35,6 @@ header {
                         text-decoration: underline;
                     }
                 }
-            }
-
-            ul {
-                position: absolute;
-                display: none;
             }
         }
     }
@@ -60,8 +55,7 @@ header {
     }
 }
 
-main {
-    grid-area: main;
+.mainIndex {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -72,7 +66,6 @@ main {
 
         h1 {
             @include color-size (11vw);
-            grid-area: h1;
             display: flex;
             align-items: flex-end;
             font-family: map-get($family, h1);
@@ -80,20 +73,19 @@ main {
 
         h2 {
             @include color-size (5vw);
-            grid-area: h2;
             font-family: map-get($family, h2);
+            padding-left: 0%
         }
 
         p {
             @include color-size (24px);
-            grid-area: p;
             font-family: map-get($family, p);
+            padding-right: 2%;
         }
     }
 }
 
 footer {
-    grid-area: footer;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,0 +1,29 @@
+section {
+
+    h2 {
+        @include color-size (5vw);
+        font-family: map-get($family, h2);
+        padding-left: 2%;
+    }
+    
+    .retrato {
+    
+        .imgEquipo {
+            width: 15vw;
+            object-fit: cover;
+            margin-bottom: 2%;
+        }
+
+        p {
+            @include color-size (24px);
+            font-family: map-get($family, p);
+        }
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
