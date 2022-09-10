@@ -43,6 +43,19 @@
 
         .retrato {
 
+            .retrato__overlay {
+                position: unset;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+            }
+
+            .retrato__overlay > * {
+                transform: translateY(0px);
+            }
+
             .imgEquipo {
                 width: 75vw;
             }

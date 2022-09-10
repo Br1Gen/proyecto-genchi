@@ -1,11 +1,5 @@
 header {
 
-    .animate__delay-1s,
-    .animate__delay-2s,
-    .animate__delay-3s {
-        --animate-delay: 0.25s
-    }
-
     nav {
         display: flex;
         align-items: center;
@@ -63,6 +57,12 @@ header {
 
     section {
         padding-left: 2%;
+
+        .animate__delay-1s,
+        .animate__delay-2s,
+        .animate__delay-3s {
+         --animate-delay: 0.5s
+    }
 
         h1 {
             @include color-size (11vw);

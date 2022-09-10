@@ -1,0 +1,43 @@
+
+.tall {
+
+    main {
+
+        section {
+    
+            p {
+                @include color-size (24px);
+                font-family: map-get($family, p);
+                padding-left: 2%;
+            }
+        }
+    
+        article {
+            margin-top: 10vh;
+            padding-left: 2%;
+    
+            .accordion {
+        
+                .accordion-item {
+                    background-color: transparent;
+            
+                    .accordion-header {
+            
+                        button {
+                            background-color: transparent;
+                            font-family: map-get($family, h3);
+                            font-size: map-get($sizes, li);
+                            color: $color-texto;
+    
+                            &:focus {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
