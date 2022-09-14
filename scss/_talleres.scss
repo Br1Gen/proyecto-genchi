@@ -35,6 +35,17 @@
                             }
                         }
                     }
+                    
+                    .accordion-collapse {
+                        
+                        .accordion-body {
+
+                            p {
+                                font-family: map-get($family, p);
+                                @include color-size (24px);
+                            }
+                        }
+                    }
                 }
             }
         }
