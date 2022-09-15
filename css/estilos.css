@@ -152,7 +152,7 @@ section .animate__delay-3s {
   --animate-delay: 0.5s
     ; }
 
-.mainProd p {
+.mainProd section p {
   color: #f5f0e9;
   font-size: 24px;
   font-family: "Dosis", sans-serif;
@@ -161,14 +161,20 @@ section .animate__delay-3s {
 .mainProd article {
   margin-top: 10vh;
   padding-left: 2%; }
-  .mainProd article a {
-    text-decoration: none;
-    color: #f5f0e9;
-    font-size: 40px;
-    font-family: "Teko", sans-serif; }
-    .mainProd article a:hover {
-      text-decoration: underline;
+  .mainProd article .accordion .accordion-item {
+    background-color: transparent; }
+    .mainProd article .accordion .accordion-item .accordion-header button {
+      background-color: transparent;
+      font-family: "Teko", sans-serif;
+      font-size: 40px;
       color: #f5f0e9; }
+      .mainProd article .accordion .accordion-item .accordion-header button:focus {
+        outline: none;
+        box-shadow: none; }
+    .mainProd article .accordion .accordion-item .accordion-collapse .accordion-body p {
+      font-family: "Dosis", sans-serif;
+      color: #f5f0e9;
+      font-size: 24px; }
 
 footer {
   margin-top: auto; }
